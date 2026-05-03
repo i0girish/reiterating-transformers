@@ -58,29 +58,29 @@ The actual attention implementation requires several calculations:
 Forward Pass->
 <img width="783" height="67" alt="image" src="https://github.com/user-attachments/assets/e1627047-ca7d-46df-aee9-69d4912ee8f7" />
 ### Observations
-we see the sentence gets a performance boost even though we still dont get a grammatically correct sentence. This is primarily due to a single transformer missing enough parameters to store all sentence information.
+We see the sentence gets a performance boost even though we still don't get a grammatically correct sentence. This is primarily due to a single transformer missing enough parameters to store all sentence information.
 Hence, we make the following tweaks:
 - Normalization layer after both attention and the forward layer 
 - Pre LN instead of Post LN
 - 6 layers instead of 1 
 - Dropout in the transformer block to prevent over-fitting.
 
-After training the final model with all the adjustments , we get a result which looks this:
+After training the final model with all the adjustments, we get a result that looks like this:
 ```alice was sad and lonely on a little ledge of rock, and, as they came nearer, alice could hear him sighing as if his heart would break. she pitied him deeply. “ what is his sorrow ? ” she asked the gryphon, and the gryphon answered, very nearly in the same words as before, ```
 
-As suggested in the original transformer paper, the more attention layers we have, the more inter-token relations form on a wider distance. We can observe that in the attention heatmap for this 6 layered transformer:
+As suggested in the original transformer paper, the more attention layers we have, the more inter-token relations form over a wider distance. We can observe that in the attention heatmap for this 6-layered transformer:
 Layer 0
 <img width="450" height="400" alt="image" src="https://github.com/user-attachments/assets/32145099-2b0a-411b-8ee8-8187518e979f" />
-Layer 1
-<img width="450" height="400" alt="image" src="https://github.com/user-attachments/assets/ffb715bf-3cf9-468b-9067-7a966cded9ab" />
 Layer 2
 <img width="450" height="400" alt="image" src="https://github.com/user-attachments/assets/7fbf0c79-9e53-4852-a86b-58738e71656c" />
-Layer 4
-<img width="450" height="400" alt="image" src="https://github.com/user-attachments/assets/9843be50-976d-4f70-9e69-5f5c49d32906" />
 Layer 5
 <img width="450" height="400" alt="image" src="https://github.com/user-attachments/assets/116d45b3-dd65-4593-9ff5-0d7dd2139c4b" />
 
-So as we see, the deeper the layer, more the connection with further tokens we get.
+So, as we see, the deeper the layer, the more connections we get with further tokens. 
+This direct correlation depicts how transformers learn better semantic relations in a sentence and generate more sound outputs, which we earlier missed in LSTMs and fewer-layer transformers.
+
+### Conclusion
+Thus, we can aggregate our observations into a conclusive formulation that this reverification of the need to move to transformers for language modelling is completely justified and served as a self-satisfactory practice. 
 
 
 
