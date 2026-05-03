@@ -79,7 +79,7 @@ Layer 5
 So, as we see, the deeper the layer, the more connections we get with further tokens. 
 This direct correlation depicts how transformers learn better semantic relations in a sentence and generate more sound outputs, which we earlier missed in LSTMs and fewer-layer transformers.
 
-### Conclusion
+## Conclusion
 Thus, we can aggregate our observations into a conclusive formulation that this reverification of the need to move to transformers for language modelling is completely justified and served as a self-satisfactory practice. 
 
 
