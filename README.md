@@ -68,4 +68,14 @@ Hence, we make the following tweaks:
 After training the final model with all the adjustments , we get a result which looks this:
 ```alice was sad and lonely on a little ledge of rock, and, as they came nearer, alice could hear him sighing as if his heart would break. she pitied him deeply. “ what is his sorrow ? ” she asked the gryphon, and the gryphon answered, very nearly in the same words as before, ```
 
+As suggested in the original transformer paper, the more attention layers we have, the more inter-token relations form on a wider distance. We can observe that in the attention heatmap for this 6 layered transformer:
+<img width="450" height="400" alt="image" src="https://github.com/user-attachments/assets/32145099-2b0a-411b-8ee8-8187518e979f" />
+<img width="450" height="400" alt="image" src="https://github.com/user-attachments/assets/ffb715bf-3cf9-468b-9067-7a966cded9ab" />
+<img width="450" height="400" alt="image" src="https://github.com/user-attachments/assets/7fbf0c79-9e53-4852-a86b-58738e71656c" />
+<img width="450" height="400" alt="image" src="https://github.com/user-attachments/assets/9843be50-976d-4f70-9e69-5f5c49d32906" />
+<img width="450" height="400" alt="image" src="https://github.com/user-attachments/assets/116d45b3-dd65-4593-9ff5-0d7dd2139c4b" />
+
+
+
+
 
