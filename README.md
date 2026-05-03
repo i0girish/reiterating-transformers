@@ -1,2 +1,2 @@
 # reiterating-transformers
-This is an attempt on firsthand reinvestigation of the history from RNNs to transformers and compare their individual advantages.
+This is an attempt at a firsthand reinvestigation of the history of 'RNNs to transformers' and comparing their individual advantages.
